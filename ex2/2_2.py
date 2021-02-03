@@ -12,4 +12,4 @@ print(semiPerim)
 
 trArea = (semiPerim * (semiPerim - float(side_a)) * (semiPerim - float(side_b) * (semiPerim - float(side_c)))) ** 0.5
 # areaTr = S=√p(p-a)(p-b)(p-c) - формула Герона
-print(trArea)
+print("Triangle area is", trArea)
