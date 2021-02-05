@@ -57,7 +57,7 @@
 # print(float_number)   #конвертация обратно в дробное число
 #
 # print(str(True))
-# print(bool(12345678))  #конвертация в boolean - всегда конвертируется в True,
+# print(bool(12345678))  #конвертация в boolean - всегда конвертируется в True, (утверждение False/True)
 # print(bool())  #False - только с пустой строкой или 0.
 #
 # num_string = '123455.0'
@@ -67,7 +67,7 @@
 # print(help(num_string))
 #
 # #a = 10
-# #print(1000 + 0.0442 + '=' + 'Hello world' + str(True) + '' + a!!!!!!!!!!!!!!!!!!
+# #print(1000 + 0.0442 + '=' + 'Hello world' + str(True) + '' + a
 #
 # side_a = 3
 # side_b = 4
@@ -78,4 +78,8 @@
 #
 # triangle_square = ((half_perimeter * (half_perimeter - side_a) * (half_perimeter - side_b) * (half_perimeter - side_c)) ** 0.5
 # print(triangle_square)
+
+
+
+
 
