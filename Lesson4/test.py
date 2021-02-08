@@ -90,10 +90,19 @@
 
 # union() method will return a set of all values from both sets
 # print(set1.union(set2))
-courses = ["Math", "History", "Programming", "Physics", "Art", "Biology"]
-courses = "Hello world"
+# courses = ["Math", "History", "Programming", "Physics", "Art", "Biology"]
+# #courses = "Hello world"
+# counter = 0
+# for subject in courses:
+#     print(subject)
+#     counter += 1
+# print(counter)
+
+courses = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# courses - "Hello world"
 counter = 0
-for subject in courses:
-    print(subject)
-    counter += 1
-print(counter)
+for num1 in courses:
+    for num2 in courses:
+        for num3 in courses:
+            for num4 in courses:
+                print(num1, num2, num3, num4)
