@@ -8,4 +8,4 @@ elif number >= 10:
 else:
     print("Else statement")
 
-
+# word "whitespace" is racistic!!!!
