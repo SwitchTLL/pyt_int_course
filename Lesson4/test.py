@@ -98,11 +98,26 @@
 #     counter += 1
 # print(counter)
 
-courses = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-# courses - "Hello world"
-counter = 0
-for num1 in courses:
-    for num2 in courses:
-        for num3 in courses:
-            for num4 in courses:
-                print(num1, num2, num3, num4)
+# courses = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# # courses - "Hello world"
+# counter = 0
+# for num1 in courses:
+#     for num2 in courses:
+#         for num3 in courses:
+#             for num4 in courses:
+#                 print(num1, num2, num3, num4)
+# courses = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+numbers = range(1, 1001)
+for num in numbers:
+    if num % 5 == 0 and num % 3 == 0:
+        print(num, "FizzBuzz")
+    elif num % 5 == 0:
+        print(num, "Fizz")
+    elif num % 3 == 0:
+        print(num, "Buzz")
+
+# counter = 0
+# for num1 in numbers:
+#     print(num1)
+# counter +=1
+# print(counter)
