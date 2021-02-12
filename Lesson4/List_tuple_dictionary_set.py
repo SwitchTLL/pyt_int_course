@@ -1,9 +1,9 @@
 # Тип скобок для этих комманд критичен!
 
-# LIST[]
-# TUPLE()
-# DICT{}
-# SET{}
+# LIST[] - изменяемый
+# TUPLE() - не изменяемый
+# DICT{} -
+# SET{} - frozen
 
 empty_string = ""
 print(type(empty_string))

@@ -52,6 +52,12 @@ while condition:
                     birth_region = "Tartu Ülikooli Naistekliinikum"
                 elif birth_region in range(21, 151):
                     birth_region = 'Ida-Tallinna keskhaigla, Pelgulinna sünnitusmaja (Tallinn)'
+                elif birth_region in range(152, 161):
+                    birth_region = 'Rapla haigla, Loksa haigla, Hiiumaa haigla (Kärdla)'
+                elif birth_region in range(162, 221):
+                    birth_region = 'Ida-Viru keskhaigla (Kohtla-Järve, endine Jõhvi)'
+                elif birth_region in range(222, 271):
+                    birth_region = 'Ida-Viru keskhaigla (Kohtla-Järve, endine Jõhvi)'
                 else:
                     birth_region = 'other region'
 
@@ -63,7 +69,7 @@ while condition:
     elif user_choice == '0':
         print('Good bye!')
         quit()
-    else:
+else:
         print('Choice is out of range')
 
 # Homework = add ID code validation control. Check by ID - 38803160272
