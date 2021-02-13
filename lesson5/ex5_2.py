@@ -20,3 +20,4 @@ while condition and counter > 0:
     else:
         print(user_input)
         condition = False  # Exit condition
+

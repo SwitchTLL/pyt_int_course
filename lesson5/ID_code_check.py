@@ -50,14 +50,32 @@ while condition:
                     region = 'Kressaare haigla'
                 elif birth_region in range(11, 20):
                     birth_region = "Tartu Ülikooli Naistekliinikum"
-                elif birth_region in range(21, 151):
+                elif birth_region in range(20, 151):
                     birth_region = 'Ida-Tallinna keskhaigla, Pelgulinna sünnitusmaja (Tallinn)'
-                elif birth_region in range(152, 161):
+                elif birth_region in range(150, 159):
+                    birth_region = 'Keila haigla'
+                elif birth_region in range(160, 219):
                     birth_region = 'Rapla haigla, Loksa haigla, Hiiumaa haigla (Kärdla)'
-                elif birth_region in range(162, 221):
+                elif birth_region in range(220, 269):
                     birth_region = 'Ida-Viru keskhaigla (Kohtla-Järve, endine Jõhvi)'
-                elif birth_region in range(222, 271):
-                    birth_region = 'Ida-Viru keskhaigla (Kohtla-Järve, endine Jõhvi)'
+                elif birth_region in range(270, 369):
+                    birth_region = 'Maarjamõisa kliinikum (Tartu), Jõgeva haigla'
+                elif birth_region in range(370, 419):
+                    birth_region = 'Narva haigla'
+                elif birth_region in range(420, 469):
+                    birth_region = 'Maarjamõisa kliinikum (Tartu), Jõgeva haigla'
+                elif birth_region in range(470, 489):
+                    birth_region = 'Haapsalu haigla'
+                elif birth_region in range(490, 519):
+                    birth_region = 'Järvamaa haigla (Paide)'
+                elif birth_region in range(520, 569):
+                    birth_region = 'Rakvere haigla, Tapa haigla'
+                elif birth_region in range(570, 599):
+                    birth_region = 'Valga haigla'
+                elif birth_region in range(600, 649):
+                    birth_region = 'Viljandi haigla'
+                elif birth_region in range(650, 699):
+                    birth_region = 'Lõuna-Eesti haigla (Võru), Põlva haigla '
                 else:
                     birth_region = 'other region'
 
@@ -73,3 +91,4 @@ else:
         print('Choice is out of range')
 
 # Homework = add ID code validation control. Check by ID - 38803160272
+# https://et.wikipedia.org/wiki/Isikukood
