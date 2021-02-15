@@ -1,2 +1,1 @@
-myvar = uppercase("jhdkjgh")
-print(myvar)
+abc = 8 **
