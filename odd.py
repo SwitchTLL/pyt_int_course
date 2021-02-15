@@ -14,7 +14,7 @@ else:
     print("Current minute seems a little odd.")
 
 
-#Original code
+# Original code
 
 #from datetime import datetime
 #import time
