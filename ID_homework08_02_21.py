@@ -7,6 +7,7 @@ bth_year = eeid[1:3]
 bth_month = eeid[3:5]
 bth_day = eeid[5:7]
 birth_region = int(eeid[7:10])
+int_eeid = int(eeid)
 
 if int(len(eeid)) == 11:  # ID length checker
     print("ID length check:\nPASSED")
@@ -67,3 +68,36 @@ elif birth_region in range(600, 649):
     print('Viljandi haigla')
 elif birth_region in range(650, 699):
     print('Lõuna-Eesti haigla (Võru), Põlva haigla')
+
+# ID code checksum validation
+
+test_list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
+test_list2 = [3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
+
+counter = 0
+index_counter = 0
+
+for digit in test_list1:
+    counter = counter + digit * int(eeid[index_counter])
+    index_counter += 1
+
+if counter % 11 == 10:
+    counter = 0
+    index_counter = 0
+    for digit in test_list2:
+        counter = counter + digit * int(eeid[index_counter])
+        index_counter += 1
+    if counter % 11 == int(eeid[10]):
+        print('Your id code is valid')
+        print('Your national ID code is: ' + str(int_eeid))
+        print('Your date of birth: ' + bth_day + '.' + bth_month + '.' + century  + bth_year)
+        print('You are ' + gender)
+    else:
+        print('Your id code is not valid')
+else:
+    if counter % 11 == int(eeid[10]):
+        print('Your id code is valid')
+        print('Your national ID code is: ' + str(int_eeid))
+        print('Your date of birth: ' + bth_day + '.' + bth_month + '.' + century + bth_year)
+    else:
+        print('Your id code is not valid')

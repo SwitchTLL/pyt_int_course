@@ -47,7 +47,7 @@ while condition:
 
         # Region control
                 if birth_region in range(1,11):
-                    birth_region = 'Kressaare haigla'
+                    birth_region = 'Kuressaare haigla'
                 elif birth_region in range(11, 20):
                     birth_region = "Tartu Ülikooli Naistekliinikum"
                 elif birth_region in range(20, 151):
