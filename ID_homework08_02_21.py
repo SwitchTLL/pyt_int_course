@@ -74,15 +74,13 @@ elif birth_region in range(650, 699):
 test_list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
 test_list2 = [3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
 
-counter = 0  # Counter variable will store test value
-index_counter = 0  # Index_counter variable will change index of id code input
+counter = 0
+index_counter = 0
 
-# First id code check goes through first list of numbers and will store result in counter variable
 for digit in test_list1:
     counter = counter + digit * int(eeid[index_counter])
     index_counter += 1
 
-# IF statement will check if remainder of counter divided by 11 is equal to 10 or not
 if counter % 11 == 10:
     counter = 0
     index_counter = 0
