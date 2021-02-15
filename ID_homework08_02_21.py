@@ -99,6 +99,5 @@ else:
         print('Your id code is valid')
         print('Your national ID code is: ' + str(int_eeid))
         print('Your date of birth: ' + bth_day + '.' + bth_month + '.' + century + bth_year)
-        print('You are ' + gender)
     else:
         print('Your id code is not valid')
